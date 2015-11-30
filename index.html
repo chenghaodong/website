@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>掌聚网能</title>
+
+<link rel="shortcut icon" href="./assets/img/logo/favicon.ico" type="image/x-icon" />
+<!-- Bootstrap core CSS -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="assets/css/main.css" rel="stylesheet">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="assets/css/animate-custom.css" rel="stylesheet">
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+<div id="navbar-main"> 
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="http://www.iwangneng.com"><img class="logoImg"  alt="掌聚网能" src="./assets/img/logo/logo.png"></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#myCarousel" class="smoothScroll">首页</a></li>
+          <li> <a href="#about" class="smoothScroll"> 产品介绍</a></li>
+          <li> <a href="#services" class="smoothScroll"> 渠道合作</a></li>
+          <!--<li> <a href="#portfolio" class="smoothScroll"> 网络展厅</a></li>-->
+          <li> <a href="#contact" class="smoothScroll"> 关于我们</a></li>
+          <li> <a href="#" class="smoothScroll"> 我的机房</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </div>
+</div>
+
+<!--主页轮播-->
+<div id="myCarousel" class="carousel slide showAll" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="first-slide"  alt="First slide" src="./assets/img/others/ad/banner1.jpg">
+    </div>
+    <div class="item">
+      <img class="second-slide" alt="Second slide" src="./assets/img/others/ad/banner2.jpg">
+    </div>
+    <div class="item">
+      <img class="third-slide" alt="Third slide" src="./assets/img/others/ad/banner3.jpg">
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  </a>
+</div>
+<!-- ==== ABOUT ==== -->
+<div id="about" class="about">
+  <div class="container">
+
+<!--    <div class="row">
+      &lt;!&ndash; PORTFOLIO IMAGE 1 &ndash;&gt;
+      <div class="col-md-4 ">
+        <div class="grid mask">
+          <figure> <img class="img-responsive" src="./assets/img/others/ad/productList1.jpg" alt="">
+            <figcaption>
+              <h5>不定位漏水检测传感器</h5>
+              <a class="btn btn-default" id="sensor1" onclick="lookSensor(this)">查看详情</a> </figcaption>
+            &lt;!&ndash; /figcaption &ndash;&gt;
+          </figure>
+          &lt;!&ndash; /figure &ndash;&gt;
+        </div>
+        &lt;!&ndash; /grid-mask &ndash;&gt;
+      </div>
+
+      &lt;!&ndash; PORTFOLIO IMAGE 2 &ndash;&gt;
+      <div class="col-md-4">
+        <div class="grid mask">
+          <figure> <img class="img-responsive" src="./assets/img/others/ad/productList2.jpg" alt="">
+            <figcaption>
+              <h5>PM2.5粉尘检测仪</h5>
+              <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+            &lt;!&ndash; /figcaption &ndash;&gt;
+          </figure>
+          &lt;!&ndash; /figure &ndash;&gt;
+        </div>
+        &lt;!&ndash; /grid-mask &ndash;&gt;
+      </div>
+
+      &lt;!&ndash; PORTFOLIO IMAGE 3 &ndash;&gt;
+      <div class="col-md-4">
+        <div class="grid mask">
+          <figure> <img class="img-responsive" src="./assets/img/others/ad/productList3.jpg" alt="">
+            <figcaption>
+              <h5>机柜粘贴式温度传感器</h5>
+              <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+            &lt;!&ndash; /figcaption &ndash;&gt;
+          </figure>
+          &lt;!&ndash; /figure &ndash;&gt;
+        </div>
+        &lt;!&ndash; /grid-mask &ndash;&gt;
+      </div>
+    </div>
+    &lt;!&ndash; /row &ndash;&gt;
+
+    &lt;!&ndash; PORTFOLIO IMAGE 4 &ndash;&gt;
+    <div class="row">
+      <div class="col-md-4 ">
+        <div class="grid mask">
+          <figure> <img class="img-responsive" src="./assets/img/others/ad/productList4.jpg" alt="">
+            <figcaption>
+              <h5>蓄电池单体检测系统</h5>
+              <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+            &lt;!&ndash; /figcaption &ndash;&gt;
+          </figure>
+          &lt;!&ndash; /figure &ndash;&gt;
+        </div>
+        &lt;!&ndash; /grid-mask &ndash;&gt;
+      </div>
+
+      &lt;!&ndash; PORTFOLIO IMAGE 5 &ndash;&gt;
+      <div class="col-md-4">
+        <div class="grid mask">
+          <figure> <img class="img-responsive" src="./assets/img/others/ad/productList5.jpg" alt="">
+            <figcaption>
+              <h5>点型光电感烟火灾探测器</h5>
+              <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+            &lt;!&ndash; /figcaption &ndash;&gt;
+          </figure>
+          &lt;!&ndash; /figure &ndash;&gt;
+        </div>
+        &lt;!&ndash; /grid-mask &ndash;&gt;
+      </div>
+
+      &lt;!&ndash; PORTFOLIO IMAGE 6 &ndash;&gt;
+      <div class="col-md-4">
+        <div class="grid mask">
+          <figure> <img class="img-responsive" src="./assets/img/others/ad/productList6.jpg" alt="">
+            <figcaption>
+              <h5>壁挂式液晶数显式温湿度传感器</h5>
+              <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+            &lt;!&ndash; /figcaption &ndash;&gt;
+          </figure>
+          &lt;!&ndash; /figure &ndash;&gt;
+        </div>
+        &lt;!&ndash; /grid-mask &ndash;&gt;
+      </div>
+      &lt;!&ndash; /col &ndash;&gt;
+    </div>-->
+    <!-- /row -->
+  </div>
+</div>
+<!-- container --> 
+
+<!-- ==== SERVICES ==== -->
+<div id="services" class="services">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">合作加盟须知</h2>
+      <hr>
+      <div class="col-lg-8 col-lg-offset-2">
+        <p class="large">深圳掌聚网能科技有限公司，聚焦网络能源行业，通过云计算、物联网和移动互联等技术， 为中小机房和网络能源产品提供完整的动力环境监控方案和运行维护平台。 </p>
+        <p class="large">掌聚网能希望与各合作伙伴一起，提高网络能源行业的建设与服务水平。 深圳掌聚网能科技有限公司，希望获得合作伙伴的部分资质信息，经掌聚网能资质审核通过之后， 才能成为掌聚网能的合作伙伴，享受合作伙伴的优惠价格及市场活动。  </p>
+      </div>
+    </div>
+    <!-- row -->
+    <div class="row">
+      <h2 class="centered">资质信息填写</h2>
+      <hr>
+      <div id="contacts" >
+        <div class="row input-redius">
+          <div class="col-xs-12 col-md-6 form-group">
+            <div class="input-group has-feedback">
+              <span class="input-group-addon">公司名称</span>
+              <input id="company" class="form-control" name="company" type="text" maxlength="20" placeholder="请输入公司名称 公司名、开户公司名、开票主体三者必须保持一致"/>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 form-group">
+            <div class="input-group has-feedback">
+              <span class="input-group-addon"> 联 系 人&nbsp; </span>
+              <input id="username" class="form-control" name="username" type="text" maxlength="20" placeholder="请输入联系人姓名"/>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 form-group">
+            <div class="input-group has-feedback">
+              <span class="input-group-addon">联系手机</span>
+              <input  id="telphone" class="form-control" name="telphone" type="text" maxlength="11" placeholder="请输入联系人手机号码"/>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 form-group">
+            <div class="input-group has-feedback">
+              <span class="input-group-addon">邮箱地址</span>
+              <input id="email" class="form-control" name="email" type="email" maxlength="20" placeholder="请输入联系人邮箱地址"/>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 form-group">
+            <div class="input-group has-feedback">
+              <span class="input-group-addon">开户银行</span>
+              <input id="dispositbank" class="form-control" name="dispositbank" type="text" maxlength="15" placeholder="请输入开户银行"/>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 form-group">
+            <div class="input-group has-feedback">
+              <span class="input-group-addon">银行账号</span>
+              <input id="cardnumber" class="form-control" name="cardnumber" type="text" maxlength="19" placeholder="请输入银行账号"/>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 form-group">
+            <div class="input-group has-feedback">
+              <span class="input-group-addon">收 货 人&nbsp;</span>
+              <input id="reciveperson" class="form-control" name="reciveperson" type="text" maxlength="10" placeholder="请输入收货人姓名"/>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 form-group">
+            <div class="input-group has-feedback">
+              <span class="input-group-addon">收货地址</span>
+              <input id="address" class="form-control" name="address" type="text" maxlength="50"placeholder="请输入收货地址 示例：四川省成都市高新区软件园c区十栋六楼1单元1号"/>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 form-group">
+            <div class="input-group has-feedback">
+              <span class="input-group-addon">纳税识别号</span>
+              <input id="ratepaying" class="form-control" name="ratepaying" type="text" maxlength="20" placeholder="请输入纳税识别号"/>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-offset-4 col-md-5">
+            <div class="checkbox">
+              <p><input id="agreeAll" type="checkbox" checked> 上述资料与声明真实有效，我同意遵照要求出示有关证明文件 </p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <button id="submit-btn" class="btn btn-default submit-btn" type="submit">提交</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- row -->
+  </div>
+</div>
+<!-- container --> 
+
+<!-- ==== PORTFOLIO ==== -->
+<!--<div id="portfolio" class="portfolio">
+  &lt;!&ndash;<div class="container">
+    <div class="row">
+      <h2 class="centered">网络展厅</h2>
+      <hr>
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <p class="large">您的产品</p>
+      </div>
+    </div>
+    &lt;!&ndash; /row &ndash;&gt;
+    <div class="container">
+      <div class="row"> 
+        
+        &lt;!&ndash; PORTFOLIO IMAGE 1 &ndash;&gt;
+        <div class="col-md-4 ">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt="">
+              <figcaption>
+                <h5>UX / UI</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+              &lt;!&ndash; /figcaption &ndash;&gt;
+            </figure>
+            &lt;!&ndash; /figure &ndash;&gt;
+          </div>
+          &lt;!&ndash; /grid-mask &ndash;&gt;
+        </div>
+        
+        &lt;!&ndash; PORTFOLIO IMAGE 2 &ndash;&gt;
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio02.jpg" alt="">
+              <figcaption>
+                <h5>CONCEPT</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+              &lt;!&ndash; /figcaption &ndash;&gt;
+            </figure>
+            &lt;!&ndash; /figure &ndash;&gt;
+          </div>
+          &lt;!&ndash; /grid-mask &ndash;&gt;
+        </div>
+        
+        &lt;!&ndash; PORTFOLIO IMAGE 3 &ndash;&gt;
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio03.jpg" alt="">
+              <figcaption>
+                <h5>MOBILE UI KIT</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+              &lt;!&ndash; /figcaption &ndash;&gt;
+            </figure>
+            &lt;!&ndash; /figure &ndash;&gt;
+          </div>
+          &lt;!&ndash; /grid-mask &ndash;&gt;
+        </div>
+      </div>
+      &lt;!&ndash; /row &ndash;&gt;
+      
+      &lt;!&ndash; PORTFOLIO IMAGE 4 &ndash;&gt;
+      <div class="row">
+        <div class="col-md-4 ">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio04.jpg" alt="">
+              <figcaption>
+                <h5>CONCEPT</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+              &lt;!&ndash; /figcaption &ndash;&gt;
+            </figure>
+            &lt;!&ndash; /figure &ndash;&gt;
+          </div>
+          &lt;!&ndash; /grid-mask &ndash;&gt;
+        </div>
+        
+        &lt;!&ndash; PORTFOLIO IMAGE 5 &ndash;&gt;
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio05.jpg" alt="">
+              <figcaption>
+                <h5>UX / UI</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+              &lt;!&ndash; /figcaption &ndash;&gt;
+            </figure>
+            &lt;!&ndash; /figure &ndash;&gt;
+          </div>
+          &lt;!&ndash; /grid-mask &ndash;&gt;
+        </div>
+        
+        &lt;!&ndash; PORTFOLIO IMAGE 6 &ndash;&gt;
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio06.jpg" alt="">
+              <figcaption>
+                <h5>CMS INTEGRATION</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+              &lt;!&ndash; /figcaption &ndash;&gt;
+            </figure>
+            &lt;!&ndash; /figure &ndash;&gt;
+          </div>
+          &lt;!&ndash; /grid-mask &ndash;&gt;
+        </div>
+        &lt;!&ndash; /col &ndash;&gt;
+      </div>
+      &lt;!&ndash; /row &ndash;&gt;
+            &lt;!&ndash; PORTFOLIO IMAGE 7 &ndash;&gt;
+      <div class="row">
+        <div class="col-md-4 ">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio07.jpg" alt="">
+              <figcaption>
+                <h5>MOCKUP</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+              &lt;!&ndash; /figcaption &ndash;&gt;
+            </figure>
+            &lt;!&ndash; /figure &ndash;&gt;
+          </div>
+          &lt;!&ndash; /grid-mask &ndash;&gt;
+        </div>
+        
+        &lt;!&ndash; PORTFOLIO IMAGE 8 &ndash;&gt;
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio08.jpg" alt="">
+              <figcaption>
+                <h5>WEB ICONS</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+              &lt;!&ndash; /figcaption &ndash;&gt;
+            </figure>
+            &lt;!&ndash; /figure &ndash;&gt;
+          </div>
+          &lt;!&ndash; /grid-mask &ndash;&gt;
+        </div>
+        
+        &lt;!&ndash; PORTFOLIO IMAGE 9 &ndash;&gt;
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio09.jpg" alt="">
+              <figcaption>
+                <h5>UX / UI</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">查看详情</a> </figcaption>
+              &lt;!&ndash; /figcaption &ndash;&gt;
+            </figure>
+            &lt;!&ndash; /figure &ndash;&gt;
+          </div>
+          &lt;!&ndash; /grid-mask &ndash;&gt;
+        </div>
+        &lt;!&ndash; /col &ndash;&gt;
+      </div>
+      &lt;!&ndash; /row &ndash;&gt;
+    </div>
+    &lt;!&ndash; /row &ndash;&gt;
+  </div>&ndash;&gt;
+</div>-->
+<!-- /container --> 
+
+<!-- ==== TEAM MEMBERS ==== -->
+<!--<div id="team" class="team">
+  &lt;!&ndash;<div class="container">
+    <div class="row centered">
+      <h2 class="centered">Meet Our Team</h2>
+      <hr>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team01.jpg" height="120px" width="120px" alt="">
+        <h4>Jessica Wally</h4>
+        <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team02.jpg" height="120px" width="120px" alt="">
+        <h4>Mike Sloan</h4>
+        <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team03.jpg" height="120px" width="120px" alt="">
+        <h4>Michele Doe</h4>
+        <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="assets/img/team/team04.jpg" height="120px" width="120px" alt="">
+        <h4>Larry Evans</h4>
+        <p>Albucius consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+      </div>
+    </div>
+  </div>&ndash;&gt;
+  &lt;!&ndash; row &ndash;&gt;
+  &lt;!&ndash;<div class="container">
+    <div class="row show-logo">
+      <h2 class="centered">关于我们</h2>
+      <hr>
+      <div class="col-md-4 centered"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        <p>QQ热线 <br>
+          3300611249</p>
+      </div>
+      <div class="col-md-4"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+        <p>邮箱地址 <br>
+          service@iwangneng.com</p>
+      </div>
+      <div class="col-md-4"> <span class=" glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+        <p> 研发中心 <br>
+          成都市高新区天府软件园C-10-6</p>
+      </div>
+    </div>
+  </div>&ndash;&gt;
+</div>-->
+<!-- container --> 
+
+<!-- ==== CONTACT ==== -->
+<div id="contact" class="contact">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">关于我们</h2>
+      <hr>
+      <h2 class="centered">深圳掌聚网能科技有限公司</h2>
+      <hr>
+      <div class="col-lg-10 col-lg-offset-1">
+        <p class="large">深圳掌聚网能科技有限公司，简称“掌聚网能”，是2015年成立于深圳市南山区的一家高新技术企业。</p>
+        <p class="large">掌聚网能以云计算、物联网和移动互联为技术基础，专注为机房的网络能源设备和IT基础设施搭建动力环境监控系统，为机房的网能设备、业主和服务团队共同打造机房设备运维和管理的应用平台。</p>
+        <p class="large">掌聚网能——机房运维，尽在掌握！</p>
+      </div>
+    </div>
+    <div class="row show-logo">
+      <div class="col-md-4 centered"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        <p>QQ热线 <br>
+          3300611249</p>
+      </div>
+      <div class="col-md-4"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+        <p>邮箱地址 <br>
+          service@iwangneng.com</p>
+      </div>
+      <div class="col-md-4"> <span class=" glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+        <p> 研发中心 <br>
+          成都市高新区天府软件园C-10-6</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="productName"></h4>
+      </div>
+      <div class="modal-body" id="myModalBody">
+          <div class="row productImg">
+            <div id="showProductImg"class="col-lg-5 col-md-5 col-xs-12 text-center showProductImg">
+              <img class="img-thumbnail netPower" alt="No Image" src="">
+            </div>
+            <div class="col-lg-7 col-md-7 col-xs-12">
+              <div id="productDes" class="produce">
+              </div>
+            </div>
+          </div>
+          <div class="row productImg">
+            <div id="paramater" class="col-lg-12 col-md-12 col-xs-12">
+                <ul class="nav nav-pills nav-justified" aria-labelledby="myTabDrop1">
+                  <li class="active"><a href="#paramaterTab" data-toggle="tab">产品规格参数</a></li>
+                  <li id="characterPills"><a href="#characterTab" data-toggle="tab">产品特点</a></li>
+                  <!--                        <li id="supposePills"><a href="#supposeTab" data-toggle="tab">支持设备</a></li>-->
+                </ul>
+                <div class="tab-content">
+                  <div id="paramaterTab" class="tab-pane fade in active">
+                  </div>
+                  <div id="characterTab" class="tab-pane fade">
+
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+<!--      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+      </div>-->
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+
+<div id="footerwrap">
+  <div class="container">
+    <div class="row">
+      <span class="copyright">Copyright &copy; 2015 深圳掌聚网能科技有限公司 粤ICP备15088855号-1</span>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="assets/js/retina.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
+<script type="text/javascript" src="assets/js/product.js"></script>
+<!--cnzz站点统计-->
+<script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1256416502'%3E%3C/span%3E%3Cscript src='"
+    + cnzz_protocol + "s5.cnzz.com/stat.php%3Fid%3D1256416502' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>
